@@ -30,7 +30,7 @@ Contract code naming rules and examples in IbGateway:
 
 ## Installation
 
-The installation environment is recommended to be based on [[**VeighNa Studio**](https://www.vnpy.com)] above version 3.4.0.
+The installation environment is recommended to be based on [[**VeighNa Studio**](https://github.com/edarchimbaud/vnpy)] above version 3.4.0.
 
 Use the pip command directly:
 
