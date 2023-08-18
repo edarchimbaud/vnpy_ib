@@ -1,4 +1,4 @@
-# VeighNa框架的InteractiveBrokers交易接口
+# InteractiveBrokers Trading Interface for the VeighNa Framework
 
 <p align="center">
   <img src ="https://vnpy.oss-cn-shanghai.aliyuncs.com/vnpy-logo.png"/>
@@ -11,42 +11,44 @@
     <img src ="https://img.shields.io/github/license/vnpy/vnpy.svg?color=orange"/>
 </p>
 
-## 说明
+## Description
 
-基于ibapi的9.81.1.post1版本开发的InteractiveBrokers交易接口。
+InteractiveBrokers trading interface developed based on ibapi version 9.81.1.post1.
 
-IbGateway中的合约代码命名规则和举例：
+Contract code naming rules and examples in IbGateway:
 
-|合约类型|代码规则|代码（symbol）|交易所（exchange）|
-|---|---|---|---|
-|股票|名称-货币-类别|SPY-USD-STK|SMART|
-|外汇|名称-货币-类别|EUR-USD-CASH|IDEALPRO|
-|贵金属|名称-货币-类别|XAUUSD-USD-CMDTY|SMART|
-|期货|名称-到期年月-货币-类别|ES-202002-USD-FUT|GLOBEX|
-|期货（指定乘数）|名称-到期年月-合约乘数-类别|SI-202006-1000-USD-FUT|NYMEX|
-|期货期权|名称-到期年月-期权类型-行权价-合约乘数-货币-类别|ES-2020006-C-2430-50-USD-FOP  |GLOBEX|
+| ContractType | CodeRule | Code (symbol) | Exchange |
+|--------------|----------|---------------|----------|
+| Stocks | Name-Currency-Class | SPY-USD-STK | SMART |
+| Forex | Name-Currency-Class | SPY-USD-STK | SMART |
+| SPY-USD-STK | SMART | Forex | Name-Currency-Category | EUR-USD-CASH | IDEALPRO |
+| Precious Metals | Name-Currency-Category | SPY-USD-STK | SMART |
+| Precious Metals | Name-Currency-Category | XAUUSD-USD-CMDTY | SMART |
+| Futures | Name-Maturity-Year-Month-Currency-Category | ES-202002-USD-FUT | GLOBEX |
+| Futures (Specified Multiplier) | Name-Month-Expiry-Contract-Multiplier-Category | SI-202006-1000-USD-FUT | NYMEX |
+| Options on Futures | Name - Expiration Month and Year - Option Type - Strike Price - Contract Multiplier - Currency - Category | ES-2020006-C-2430-50-USD-FOP | GLOBEX |
 
-## 安装
+## Installation
 
-安装环境推荐基于3.4.0版本以上的【[**VeighNa Studio**](https://www.vnpy.com)】。
+The installation environment is recommended to be based on [[**VeighNa Studio**](https://www.vnpy.com)] above version 3.4.0.
 
-直接使用pip命令：
+Use the pip command directly:
 
-```
+``
 pip install vnpy_ib
 ```
 
-或者下载源代码后，解压后在cmd中运行：
+Or download the source code, unzip it and run it in cmd:
 
-```
+```bash
 pip install .
 ```
 
-## 使用
+## Use
 
-以脚本方式启动（script/run.py）：
+Start as a script (script/run.py):
 
-```
+```python
 from vnpy.event import EventEngine
 from vnpy.trader.engine import MainEngine
 from vnpy.trader.ui import MainWindow, create_qapp
@@ -55,7 +57,7 @@ from vnpy_ib import IbGateway
 
 
 def main():
-    """主入口函数"""
+    """Main entry function"""
     qapp = create_qapp()
 
     event_engine = EventEngine()

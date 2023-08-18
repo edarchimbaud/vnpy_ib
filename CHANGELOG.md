@@ -1,26 +1,26 @@
-# 9.81.1.6版本
+# Version 9.81.1.6
 
-1. 修复获取历史数据时的异常失败问题
+1. Fix an exception failure when getting historical data
 
-# 9.81.1.5版本
+# 9.81.1.5 Version
 
-1. 修复API版本升级导致的委托报错问题
+1. Fix a delegate error caused by API version upgrade.
 
-# 9.81.1.4版本
+# 9.81.1.4 Version 1.
 
-1. 查询历史K线数据时，对外汇和贵金属现货均使用中间价字段
+1. When querying historical K-line data, use the mid-price field for both FX and precious metal spot.
 
-# 9.81.1.3版本
+# 9.81.1.3 version
 
-1. 使用zoneinfo替换pytz库
-2. 调整安装脚本setup.cfg，添加Python版本限制
+1. Replace pytz library with zoneinfo.
+2. Adjust the installation script setup.cfg to add Python version restriction.
 
-# 9.81.1.2版本
+# 9.81.1.2 version
 
-1. 添加对于指数行情数据的支持
-2. 添加CAD加元货币类型支持
-3. 添加沪股通、深股通、美洲交易所、多伦多交易所支持
+1. Added support for index ticker data
+2. Add support for CAD currency type.
+3. Add support for Shanghai Stock Exchange, Shenzhen Stock Exchange, American Stock Exchange, Toronto Stock Exchange.
 
-# 9.81.1.1版本
+# Version 9.81.1.1
 
-1. 调整接口初始化时，接口名称的赋值方式
+1. Adjust the way of assigning the interface name when initializing the interface.

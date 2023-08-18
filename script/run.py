@@ -6,7 +6,7 @@ from vnpy_ib import IbGateway
 
 
 def main():
-    """主入口函数"""
+    """Main entry function"""
     qapp = create_qapp()
 
     event_engine = EventEngine()
