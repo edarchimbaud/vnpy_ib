@@ -8,7 +8,7 @@
 
 # 9.81.1.4 Version 1.
 
-1. When querying historical K-line data, use the mid-price field for both FX and precious metal spot.
+1. When querying historical bar data, use the mid-price field for both FX and precious metal spot.
 
 # 9.81.1.3 version
 
